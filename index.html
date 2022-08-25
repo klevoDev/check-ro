@@ -123,7 +123,7 @@
                 </div>
             </section>
 
-            <seciton class="page__string dom">
+            <seciton class="page__dom dom">
                 <div class="container">
                     <h2 class="dom__subheading subheading">
                         DOM
@@ -142,33 +142,45 @@
                             Возвращает объект - DOM-элемент / null - если ничего не нашёл <br>
                         </p>
                     </label>
-                    <div class="dom__question question">
-                        Как искать по классу (запись как выглядит в скобках)?
-                    </div>
-                    <p class="dom__answer answer">
-                        const buttonSubmitElement = document.querySelector('.form__button')
-                    </p>
-                    <p class="dom__answer-more more">
-                        По классу обращение через точку
-                    </p>
-                    <div class="dom__question question">
-                        Как искать по id (запись как выглядит в скобках)?
-                    </div>
-                    <p class="dom__answer answer">
-                        const formElement = document.querySelector('#form-123e257')
-                    </p>
-                    <p class="dom__answer-more more">
-                        По id обращение через #
-                    </p>
-                    <div class="dom__question question">
-                        Как искать по атрибуту (запись как выглядит в скобках)?
-                    </div>
-                    <p class="dom__answer answer">
-                        const inputAttrElement = document.querySelector('[type="text"]')
-                    </p>
-                    <p class="dom__answer-more more">
-                        По атрибуту в квадратных скобках
-                    </p>
+                    <label class="label">
+                        <div class="dom__question question">
+                            <input class="string__checkbox" type="checkbox" name="" id="check1">
+                            Как искать по классу (запись как выглядит в скобках)?
+                        </div>
+                        <p class="dom__answer answer">
+                            <span class="dom__strong strong">Ответ:</span>
+                            const buttonSubmitElement = document.querySelector('.form__button')
+                        </p>
+                        <p class="dom__answer-more more">
+                            По классу обращение через точку
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="dom__question question">
+                            <input class="string__checkbox" type="checkbox" name="" id="check1">
+                            Как искать по id (запись как выглядит в скобках)?
+                        </div>
+                        <p class="dom__answer answer">
+                            <span class="dom__strong strong">Ответ:</span>
+                            const formElement = document.querySelector('#form-123e257')
+                        </p>
+                        <p class="dom__answer-more more">
+                            По id обращение через #
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="dom__question question">
+                            <input class="string__checkbox" type="checkbox" name="" id="check1">
+                            Как искать по атрибуту (запись как выглядит в скобках)?
+                        </div>
+                        <p class="dom__answer answer">
+                            <span class="dom__strong strong">Ответ:</span>
+                            const inputAttrElement = document.querySelector('[type="text"]')
+                        </p>
+                        <p class="dom__answer-more more">
+                            По атрибуту в квадратных скобках
+                        </p>
+                    </label>
                     <label class="label">
                         <div class="dom__question question">
                             <input class="string__checkbox" type="checkbox" name="" id="check1">
@@ -198,30 +210,42 @@
                             Поиск среди родительских элементов, с помощью метода .closest('.тут пишем родителя')
                         </p>
                     </label>
-                    <h4 class="dom__subtitle subtitle">
-                        Поиск более одного элемента? Как работать с данным массивом?
-                    </h4>
-                    <p class="dom__text text">
-                        // Поиск элементов по css-селектору <br>
-                        // Возвращает массив (NodeList), если ничего не нашёл [] <br>
-
-                        // NodeList - объект(массиво-подобный) - не работают hof-функции, кроме forEach <br>
-                        // HTMLCollection - объект(массиво-подобный) не работает даже с forEach <br>
-                        // Привести к массиву можно с помощью Array.from(inputList) <br>
-                        Это все делается если нужно применять не forEach, если forEach то приводить не нужно
-                    </p>
-                    <h4 class="dom__subtitle subtitle">
-                        Каскадность (приоритет селекторов) ? Что такое инлайновый стиль?
-                    </h4>
-                    <div class="dom__wrap-image">
-                        <img class="dom__image" src="./img/priority.png" alt="">
-                    </div>
-                    <p class="dom__text text">
-                        спрашивают на собесах что приритетнее
-                        тег сласс тег сколько в сумме дает?
-                        или тег тег тег id
-                        инлайновый стиль - это стиль который мы пишем на пряму в html
-                    </p>
+                    <label class="label">
+                        <div class="dom__question question">
+                            <input class="string__checkbox" type="checkbox" name="" id="check1">
+                            Поиск более одного элемента? Как работать с данным массивом?
+                        </div>
+                        <p class="dom__answer answer">
+                            <span class="dom__strong strong">Ответ:</span>
+                            const inputList = document.querySelectorAll('input')
+                        </p>
+                        <p class="dom__answer-more more">
+                            // Поиск элементов по css-селектору <br>
+                            // Возвращает массив (NodeList), если ничего не нашёл [] <br>
+                            // NodeList - объект(массиво-подобный) - не работают hof-функции, кроме forEach <br>
+                            // HTMLCollection - объект(массиво-подобный) не работает даже с forEach <br>
+                            // Привести к массиву можно с помощью Array.from(inputList) <br>
+                            Это все делается если нужно применять не forEach, если forEach то приводить не нужно
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="dom__question question">
+                            <input class="string__checkbox" type="checkbox" name="" id="check1">
+                            Каскадность (приоритет селекторов) ? Что такое инлайновый стиль?
+                        </div>
+                        <p class="dom__answer answer">
+                            <span class="dom__strong strong">Ответ:</span>
+                        <div class="dom__wrap-image">
+                            <img class="dom__image" src="./img/priority.png" alt="">
+                        </div>
+                        </p>
+                        <p class="dom__answer-more more">
+                            спрашивают на собесах что приоритетнее.
+                            Тег, класс, тег, сколько в сумме дает?
+                            или тег, тег, тег, id
+                            инлайновый стиль - это стиль который мы пишем на пряму в html
+                        </p>
+                    </label>
                     <label class="label">
                         <div class="dom__question question">
                             <input class="string__checkbox" type="checkbox" name="" id="check1">
@@ -266,6 +290,169 @@
                     </label>
                 </div>
             </seciton>
+
+            <section class="page__dom-class dom-class">
+                <div class="container">
+                    <h2 class="dom-class__subheading subheading">
+                        Class (.classList)
+                    </h2>
+                    <h3 class="dom-class__tittle tittle">
+                        Начальные условия - const textEl = document.querySelector('.start__text');
+                    </h3>
+                    <label class="label">
+                        <div class="dom-class__question question">
+                            <input class="dom-class__checkbox" type="checkbox" name="" id="check1">
+                            Как проверить на наличие класса?
+                        </div>
+                        <p class="dom-class__answer answer">
+                            <span class="dom-class__strong strong">Ответ:</span>
+                            if (textEl.classList.contains('text')) {
+                            console.log(true);
+                            }
+                        </p>
+                        <p class="dom-class__answer-more more">
+                            Ищем через if, в круглых скобках точку не ставим, так как мы и так работаем с классом
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="dom-class__question question">
+                            <input class="dom-class__checkbox" type="checkbox" name="" id="check1">
+                            Как получить массив классов? Строку всего класса? Первый класс из массива?
+                        </div>
+                        <p class="dom-class__answer answer">
+                            <span class="dom-class__strong strong">Ответ:</span>
+                            console.log(textEl.classList); // Массив с классами
+                        </p>
+                        <p class="dom-class__answer answer">
+                            <span class="dom-class__strong strong">Ответ:</span>
+                            console.log(textEl.classList[0]); // Первый класс из массива
+                        </p>
+                        <p class="dom-class__answer answer">
+                            <span class="dom-class__strong strong">Ответ:</span>
+                            console.log(textEl.classList.value); // Строка всего класса
+                        </p>
+                        <p class="dom-class__answer-more more">
+                            console.log(textEl.className); // Обращение к атрибуту - Строка всего класса, по скольку слово класс зарезервировано js
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="dom-class__question question">
+                            <input class="dom-class__checkbox" type="checkbox" name="" id="check1">
+                            Как добавить класс ? (Два способа))
+                        </div>
+                        <p class="dom-class__answer answer">
+                            <span class="dom-class__strong strong">Ответ:</span>
+                            textEl.classList.add('_active') // Добавляет класс
+                        </p>
+                        <p class="dom-class__answer answer">
+                            <span class="dom-class__strong strong">Ответ:</span>
+                            textEl.classList.toggle('_active') // Добавляет класс если его нети убирает класс, если он есть
+                        </p>
+                        <p class="dom-class__answer-more more">
+                            // ! Класс должен быть заранее прописан в css ._active
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="dom-class__question question">
+                            <input class="dom-class__checkbox" type="checkbox" name="" id="check1">
+                            Как удалить класс ?
+                        </div>
+                        <p class="dom-class__answer answer">
+                            <span class="dom-class__strong strong">Ответ:</span>
+                            textEl.classList.remove('text') // * Удаление
+                        </p>
+                        <p class="attribute__answer-more more">
+
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="dom-class__question question">
+                            <input class="dom-class__checkbox" type="checkbox" name="" id="check1">
+                            Как заменить класс ?
+                        </div>
+                        <p class="dom-class__answer answer">
+                            <span class="dom-class__strong strong">Ответ:</span>
+                            textEl.classList.replace('text', '_text-replaced')
+                        </p>
+                        <p class="dom-class__answer-more more">
+                            два параметра, первый это класс который меняем, второй на что меняем
+                        </p>
+                    </label>
+                </div>
+            </section>
+
+            <section class="page__attribute attribute">
+                <div class="container">
+                    <h2 class="attribute__subheading subheading">
+                        Attribute
+                    </h2>
+                    <label class="label">
+                        <div class="attribute__question question">
+                            <input class="attribute__checkbox" type="checkbox" name="" id="check1">
+                            Как проверить на существование атрибута ?
+                        </div>
+                        <p class="attribute__answer answer">
+                            <span class="attribute__strong strong">Ответ:</span>
+                            inputlEl.hasAttribute('href')
+                        </p>
+                        <p class="attribute__answer-more more">
+                            возвращает true или false
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="attribute__question question">
+                            <input class="attribute__checkbox" type="checkbox" name="" id="check1">
+                            Как текущее значение атрибута и в момент атрисовки ?
+                        </div>
+                        <p class="attribute__answer answer">
+                            <span class="attribute__strong strong">Ответ:</span>
+                            console.log(inputlEl.value); - текущее
+                        </p>
+                        <p class="attribute__answer-more more">
+                            console.log(inputlEl.getAttribute('value')); // null // Знаечние в момент отрисовки (самое первое значение)
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="attribute__question question">
+                            <input class="attribute__checkbox" type="checkbox" name="" id="check1">
+                            Как удалить атрибут ?
+                        </div>
+                        <p class="attribute__answer answer">
+                            <span class="attribute__strong strong">Ответ:</span>
+                            inputlEl.removeAttribute('class') // Удалить атрибут
+                        </p>
+                        <p class="attribute__answer-more more">
+
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="attribute__question question">
+                            <input class="attribute__checkbox" type="checkbox" name="" id="check1">
+                            Как изменить значение атрибута?
+                        </div>
+                        <p class="attribute__answer answer">
+                            <span class="attribute__strong strong">Ответ:</span>
+                            inputlEl.setAttribute('value', '100') // Изменить первоначальное состояние
+                        </p>
+                        <p class="attribute__answer-more more">
+
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="attribute__question question">
+                            <input class="attribute__checkbox" type="checkbox" name="" id="check1">
+                            Как создать атрибуты ?
+                        </div>
+                        <p class="attribute__answer answer">
+                            <span class="attribute__strong strong">Ответ:</span>
+                            Все атрибуты у тегов уже созданы изначально, их можно только менять
+                        </p>
+                        <p class="attribute__answer-more more">
+                            data-attribute - порльзовательские атрибуты
+                        </p>
+                    </label>
+                </div>
+            </section>
         </main>
     </div>
 </body>
