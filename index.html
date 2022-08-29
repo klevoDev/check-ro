@@ -123,6 +123,76 @@
                 </div>
             </section>
 
+            <section class="page__number number">
+                <div class="container">
+                    <h2 class="number__subheading subheading">
+                        Number-ext
+                    </h2>
+                    <label class="label">
+                        <div class="number__question question">
+                            <input class="number__checkbox" type="checkbox" name="" id="check1">
+                            Как отбросить дробную часть, а также откинуть текст справа? Как отбросить только текст?
+                        </div>
+                        <p class="number__answer answer">
+                            <span class="number__strong strong">Ответ:</span>
+                            parseInt(19.5); // 19
+                        </p>
+                        <p class="number__answer-more more">
+                            parseFloat('19.5px'); // 19.5
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="number__question question">
+                            <input class="number__checkbox" type="checkbox" name="" id="check1">
+                            Как округляет число до n знаков после запятой? Какой тип данных возвращает?
+                        </div>
+                        <p class="number__answer answer">
+                            <span class="number__strong strong">Ответ:</span>
+                            <number>.toFixed(n) // n количество символом после точки
+                        </p>
+                        <p class="number__answer-more more">
+                            ВОЗВРАЩАЕТ строку + ~округляет по правилам математики
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="number__question question">
+                            <input class="number__checkbox" type="checkbox" name="" id="check1">
+                            Как округлить до целого в меньшую сторону?
+                        </div>
+                        <p class="number__answer answer">
+                            <span class="number__strong strong">Ответ:</span>
+                            Math.floor(<number>)
+                        </p>
+                        <p class="number__answer-more more">
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="number__question question">
+                            <input class="number__checkbox" type="checkbox" name="" id="check1">
+                            Как округлить до целого в большую сторону?
+                        </div>
+                        <p class="number__answer answer">
+                            <span class="number__strong strong">Ответ:</span>
+                            Math.ceil(<number>)
+                        </p>
+                        <p class="number__answer-more more">
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="number__question question">
+                            <input class="number__checkbox" type="checkbox" name="" id="check1">
+                            Как округлить до целого в ближайшую сторону?
+                        </div>
+                        <p class="number__answer answer">
+                            <span class="number__strong strong">Ответ:</span>
+                            Math.round(<number>)
+                        </p>
+                        <p class="number__answer-more more">
+                        </p>
+                    </label>
+                </div>
+            </section>
+
             <seciton class="page__dom dom">
                 <div class="container">
                     <h2 class="dom__subheading subheading">
