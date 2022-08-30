@@ -12,6 +12,14 @@
 <body>
     <div class="wrapper">
         <main class="page">
+            <section class="page__js js">
+                <section class="container">
+                    <h2 class="js__subheading subheading">
+                        Основы JS
+                    </h2>
+                </section>
+            </section>
+
             <section class="page__string string">
                 <div class="container">
                     <h2 class="string__subheading subheading">
@@ -188,6 +196,159 @@
                             Math.round(<number>)
                         </p>
                         <p class="number__answer-more more">
+                        </p>
+                    </label>
+                </div>
+            </section>
+
+            <section class="page__function-type function-type">
+                <div class="container">
+                    <h2 class="function-type__subheading subheading">
+                        Function Type
+                    </h2>
+                    <label class="label">
+                        <div class="function-type__question question">
+                            <input class="function-type__checkbox" type="checkbox" name="" id="check1">
+                            Назвать все типы функций, так же как они записываются?
+                        </div>
+                        <p class="function-type__answer answer">
+                            <span class="function-type__strong strong">Ответ:</span>
+                            <img src="./img/fd.png" alt="">
+                            <img src="./img/fe.png" alt="">
+                            <img src="./img/af.png" alt="">
+                        </p>
+                        <p class="function-type__answer-more more">
+                        </p>
+                    </label>
+                </div>
+            </section>
+
+            <section class="page__array array">
+                <div class="container">
+                    <h2 class="array__subheading subheading">
+                        Array Methods
+                    </h2>
+                    <label class="label">
+                        <div class="number__question question">
+                            <input class="number__checkbox" type="checkbox" name="" id="check1">
+                            Как добавить элемент в конец массива?
+                        </div>
+                        <p class="number__answer answer">
+                            <span class="number__strong strong">Ответ:</span>
+                            <array>.push(...items)
+                        </p>
+                        <p class="number__answer-more more">
+                            Мутирует исходный массив, возвращает новую длину массива
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="number__question question">
+                            <input class="number__checkbox" type="checkbox" name="" id="check1">
+                            Как удалить последний элемент массива ?
+                        </div>
+                        <p class="number__answer answer">
+                            <span class="number__strong strong">Ответ:</span>
+                            <array>.pop()
+                        </p>
+                        <p class="number__answer-more more">
+                            Мутирует исходный массив, возвращает удалённый элемент
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="number__question question">
+                            <input class="number__checkbox" type="checkbox" name="" id="check1">
+                            Как добавить элемент(ы) в начало массива?
+                        </div>
+                        <p class="number__answer answer">
+                            <span class="number__strong strong">Ответ:</span>
+                            <array>.unshift(...items)
+                        </p>
+                        <p class="number__answer-more more">
+                            Мутирует исходный массив, возвращает удалённый элемент
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="number__question question">
+                            <input class="number__checkbox" type="checkbox" name="" id="check1">
+                            Как найти индекс первого встречного значения value, начиная с позиции startIndex (по умолчанию равен 0)
+                        </div>
+                        <p class="number__answer answer">
+                            <span class="number__strong strong">Ответ:</span>
+                            let index = <array>.indexOf(value, startIndex = 0)
+                        </p>
+                        <p class="number__answer-more more">
+                            Возвращает найденный индекс или -1, если ничего не найдёт
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="number__question question">
+                            <input class="number__checkbox" type="checkbox" name="" id="check1">
+                            Как проверить на наличие value в массиве, начиная с индекса startIndex (по умолчанию равен 0)
+                        </div>
+                        <p class="number__answer answer">
+                            <span class="number__strong strong">Ответ:</span>
+                            let hasValue = <array>.includes(value, startIndex = 0)
+                        </p>
+                        <p class="number__answer-more more">
+                            Возвращает true/false, поддерживает отрицательные индексы
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="number__question question">
+                            <input class="number__checkbox" type="checkbox" name="" id="check1">
+                            Как обрезать массив? Что на выходе?
+                        </div>
+                        <p class="number__answer answer">
+                            <span class="number__strong strong">Ответ:</span>
+                            let array = <array>.slice(start, end = array.length)
+                        </p>
+                        <p class="number__answer-more more">
+                            Копирует все элементы массива с позиции start до end НЕ ВКЛ, возвращает новый массив
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="number__question question">
+                            <input class="number__checkbox" type="checkbox" name="" id="check1">
+                            Как удалить элементы и добавить на их место новые элементы ? (добавлять не обязательно)
+                        </div>
+                        <p class="number__answer answer">
+                            <span class="number__strong strong">Ответ:</span>
+                            let array = <array>.splice(idx, deleteCount, ...items)
+                        </p>
+                        <p class="number__answer-more more">
+                            Начиная с индекс idx, удаляет элементы, количеством deleteCount и вставляет на его место элемент(ы) items <br>
+                            Добавление - необязательный параметр <br>
+                            Возвращает массив удалённых элементов <br>
+                            Мутирует исходный массив
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="number__question question">
+                            <input class="number__checkbox" type="checkbox" name="" id="check1">
+                            Как склеить массивы?
+                        </div>
+                        <p class="number__answer answer">
+                            <span class="number__strong strong">Ответ:</span>
+                            let array = <array>.concat(...arrays)
+                        </p>
+                        <p class="number__answer-more more">
+                            // Добавленные элементы могут быть массивом, или числами <br>
+                            // Склеивает массивы между собой <br>
+                            // Возвращае новый массив <br>
+                        </p>
+                    </label>
+                    <label class="label">
+                        <div class="number__question question">
+                            <input class="number__checkbox" type="checkbox" name="" id="check1">
+                            Как преобразовать массив в строку?
+                        </div>
+                        <p class="number__answer answer">
+                            <span class="number__strong strong">Ответ:</span>
+                            let string = <array>.join(spl)
+                        </p>
+                        <p class="number__answer-more more">
+                            Преобразует массив в строку, добавляя разделитель spl <br>
+                            Возвращает строку <br>
                         </p>
                     </label>
                 </div>
